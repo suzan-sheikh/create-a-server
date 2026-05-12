@@ -6,7 +6,6 @@ const server: Server = createServer(
     routeHandler(req, res);
   },
 );
-
 server.listen(5000, () => {
   console.log("server is running on the port 5000");
 });
