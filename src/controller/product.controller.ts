@@ -25,5 +25,10 @@ export const productController = (
     res.end(
       JSON.stringify({ message: "product sent successful", data: product }),
     );
+  } else if (method === "POST" && url === "/products") {
+    res.writeHead(200, { "content-type": "application/json" });
+    res.end(
+      JSON.stringify({ message: "product sent successful", data: product }),
+    );
   }
 };
